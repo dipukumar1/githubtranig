@@ -1,23 +1,27 @@
 const express = require('express');
+//const lodash = require('lodash')
 const myHelper = require('../util/helper')
-const underscore = require('underscore')
+//const underscore = require('underscore')
 
 const router = express.Router();
 
-// router.get('/test-me', function (req, res) {
-//     myHelper.printDate()
-//     myHelper.getCurrentMonth()
-//     myHelper.getCohortData()
+ router.get('/test-me', function (req, res) {
+    myHelper.printDate()
+     myHelper.getCurrentMonth()
+     myHelper.getCohortData()
 
-//     let firstElement = underscore.first(['Sabiha','Akash','Pritesh'])
-//     console.log('The first element received from underscope function is '+firstElement)
-//     res.send('My first ever api!')
-// });
+     //let firstElement = underscore.first(['Sabiha','Akash','Pritesh'])
+    // console.log('The first element received from underscope function is '+firstElement)
+    res.send('My first ever api!')
+});
 
-  router.get('/hello', function (req, res) {
+//   router.get('/hello', function (req, res) {
+//       const data =["jan","feb","march","april","may","june","july","aug","sep","oct","nov","dec"];
+//       const chunks =lodash.chunk(data ,4);
+//       console.log(chunks);
    
-    res.send('Hello there!')
- });
+//     res.send('Hello there! its my api')
+//  });
 
 
 // router.get('/candidates', function(req, res){
