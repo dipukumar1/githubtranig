@@ -6,10 +6,15 @@ const userSchema = new mongoose.Schema( {
     mobile: {
         type: String,
 
-        required: true
     },
     emailId: String,
     password: String,
+
+    isDeleted:{
+        type:Boolean,
+        default:false
+    },
+       
     gender: {
         type: String,
         enum: ["male", "female", "other"]
