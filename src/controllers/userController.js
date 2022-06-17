@@ -32,13 +32,14 @@ const loginUser = async function (req, res) {
     {
       userId: user._id.toString(),
       batch: "thorium",
-      organisation: "FUnctionUp",
+      organisation: "FunctionUp",
     },
-    "functionup-thorium"
+    "functionUp-thorium"
   );
   res.setHeader("x-auth-token", token);
   res.send({ status: true, data: token });
 };
+
 
 const getUserData = async function (req, res) {
   let token = req.headers["x-Auth-token"];
